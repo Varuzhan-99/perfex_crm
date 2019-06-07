@@ -2040,3 +2040,14 @@ CREATE TABLE `tblweb_to_lead` (
   `dateadded` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for tblcontacts_project
+-- ----------------------------
+DROP TABLE IF EXISTS `tblcontacts_project`;
+CREATE TABLE `tblcontacts_project` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `contact_id` int(11) NOT NULL,
+  `project_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
